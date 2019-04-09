@@ -1,0 +1,16 @@
+@mixin raleway($x:1.5) {
+  font: {
+    family: 'raleway', serif;
+    weight: bold;
+  }
+  color: $font-white;
+  line-height: $x;
+}
+
+@mixin open ($x:1.5) {
+  font:{
+    family: 'Open Sans', sans-serif;
+  }
+  color: $font-white;
+  line-height: $x
+}

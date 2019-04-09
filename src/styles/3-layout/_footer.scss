@@ -1,0 +1,12 @@
+footer {
+  background-color: $bckg-footer;
+  top: 3105px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  section {
+    width: 380px;
+  }
+}

@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+a.link-2 {
+  @include open();
+  color: #62E0D9;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #62E0D9;
+  display: block;
+  width: fit-content;
+}
+
+h1 {
+  @include raleway();}
+
+p {
+    @include open();
+  &.quote {
+    font-size: 14px;
+  }
+  &.author {
+    font: {
+      size: 10px;
+      weight: bold;
+    }
+    line-height: 1.2;
+  }
+  &.author-title {
+    font-size: 7px;
+    line-height: 1.43;
+  }
+}
+
+ul.links li {
+  @include raleway();
+  font-size: 16px;
+}
+
+.about {
+  text-align: center;
+  p {
+    font-size: 20px;
+    margin: 32px auto;
+    &.click {
+      @include raleway();
+      font-size: 16px;
+    }
+  }
+  h1 {
+    font-size: 40px;
+    margin-top: 36px
+  }
+}
+
+.products, .early-access {
+  text-align: center;
+  p{
+  font-size: 14px;
+  margin-top: 8px
+  }
+}
+
+.stay-productive, .footer-bottom {
+  p {
+    margin: 16px auto;
+  }
+  p, li {
+    font-size: 16px;
+  }
+  li {
+    @include open();
+  }
+}
+
+.products{
+  h1 {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+}
+
+.stay-productive {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.testimonials{
+  p {
+    letter-spacing: .5px;
+    width: 309.3px;
+  }
+}
+
+.early-access {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+
+figure {
+  .location {
+    height: 18px;
+    width: auto;
+  }
+  .phone, .email {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.social i {
+  @include open();
+  font-size: 21px;
+  width: auto;
+  color: $font-white;
+}
+
+label.click {
+    @include raleway();
+    font-size: 16px;
+  }
+
+
+//h2 {
+//  font-size: 1em;
+//  @media (max-width: $breakpoint-tablet) {
+//    font-size: .7em;
+//  }
+//}

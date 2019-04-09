@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  height: 52px;
+  align-items: center;
+  margin: 75px 80px;
+  a.logo {
+    height: 100%;
+  }
+}
+
+ul.links {
+  display: flex;
+  justify-content: space-between;
+}

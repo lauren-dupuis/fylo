@@ -1,0 +1,199 @@
+div.main {
+  background-color: $bckg-main;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  &.content {
+    background-image: url("build/images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position-y: 643px;
+    width: 100%;
+    height: auto;
+  }
+  .about {
+    width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .products {
+    width: 880px;
+    height: 508px;
+    margin: 158px auto 136px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .stay-productive {
+    margin: 0 105px 143px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      width: 563px;
+      display: flex;
+      flex-direction: column;
+    }
+    figure img {
+      width: 614.76px;
+      height: auto;
+    }
+  }
+  &.early-access {
+    background-color: $bckg-footer;
+    width: 100%;
+    height: 275px;
+    div.flex {
+    width: 801px;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    background-color: hsl(217, 28%, 15%);
+    top: 2845px;
+    left: 390px;
+    box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+    border-radius: 4.93px;
+    }
+    p {
+      width: 90%;
+    }
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 310px;
+    color: white;
+  }
+  &.contact {
+    display: flex;
+    flex-direction: column;
+        width: 225px;
+  }
+  &.social {
+    color: $font-white;
+  }
+}
+
+.one, .two, .three, .four {
+  width: 349px;
+  figure img{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+div {
+&.click {
+  background-image: linear-gradient(111deg, $cyan, $blue);
+  width: 200px;
+  height: 56px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  label.click {
+    width: 200px;
+    text-align: center;
+    }
+  }
+  &.phone, &.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1180px;
+  height: 247px;
+  margin: 0 auto 201px;
+  figure.behind {
+    position: absolute;
+    top: 2517px;
+  }
+  .one, .two, .three, .four {
+    background: $bckg-testimonials;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+    border-radius: 3.93px;
+    }
+  }
+
+
+.group {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  top: 2545px;
+  align-items: flex-end;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  }
+  .name-title {
+    display: flex;
+    flex-direction: column;
+    width: 258px;
+  }
+}
+
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 75%;
+  section.lorem {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    figure.location {
+      margin: 21px;
+    }
+  }
+  .Contact {
+    width: 225px;
+  }
+}
+
+input, select {
+  vertical-align: middle;
+    width: 480px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+figure {
+  &.author-pic img {
+  width: 24px;
+  height: auto;
+  border-radius: 24px;
+  }
+  img.quotations {
+  }
+
+}

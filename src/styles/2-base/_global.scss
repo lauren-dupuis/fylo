@@ -1,0 +1,16 @@
+html, body {
+  background: $bckg-intro-email;
+}
+
+section .container {
+  @media (max-width: $breakpoint-desktop) {
+    background-color: $bckg-intro-email;
+    width: 100%;
+    height: auto;
+
+  }
+}
+
+//a:link, a:visited {color: $turquoise; @include transition1;}
+
+//a:hover,a:active {color: $coal;}
