@@ -10,3 +10,114 @@ footer {
     width: 380px;
   }
 }
+
+@media only screen and (max-width: 375px) {
+
+  footer {
+    background-color: #0b1523;
+    top: 3526px;
+    position: absolute;
+  }
+  .footer-top {
+    margin-bottom: 45px;
+    width: 375px;
+  }
+
+  a.footer-logo {
+    margin-left: 50px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 20px;
+    flex-direction: column;
+  }
+  .footer-bottom section.lorem {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .footer-bottom .contact {
+    width: 300px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 0 50px;
+  }
+
+  .footer-bottom .links {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 50px;
+  }
+
+  .links ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .footer-bottom .links li {
+    list-style: none;
+    padding: 15px 0 0;
+  }
+  .footer-top {
+    margin-bottom: 32px;
+  }
+
+  .footer-bottom {
+    p {
+      margin: 0;
+    }
+    section.lorem {
+      width: 379px;
+      display: flex;
+      flex-direction: row;
+      justify-items: flex-start;
+      figure.location {
+        margin: 21px;
+      }
+    }
+
+    .social {
+      display: flex;
+      justify-content: space-evenly;
+      width: 300px;
+      margin-top: 25px;
+    }
+    .links {
+      width: 230px;
+      display: flex;
+      flex-direction: column;
+      li {
+        list-style: none;
+        padding: 10px 0px;
+      }
+    }
+    .contact {
+      width: 171px;
+      height: 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  .links ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+
+}
