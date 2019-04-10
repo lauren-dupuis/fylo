@@ -196,7 +196,7 @@ div.main {
   height: 100%; }
 
 section.content {
-  background-image: url(/Users/Lou/GitHub/portfolio/build/images/bg-curvy-desktop.svg);
+  background-image: url("build/images/bg-curvy-desktop.svg");
   background-repeat: no-repeat;
   background-position-y: 643px;
   width: 100%;
@@ -213,7 +213,7 @@ section .products {
   margin: 158px auto 136px auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center; }
 section .stay-productive {
   margin: 0 105px 143px;
@@ -230,18 +230,36 @@ section .stay-productive {
 section.early-access {
   background-color: #0b1523;
   width: 100%;
-  margin: 0 auto;
   height: 275px; }
   section.early-access div.flex {
-    width: 863px;
-    height: 100%;
+    width: 801px;
+    height: 280px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    align-items: stretch;
+    align-items: end;
     justify-content: center;
-    z-index: -1; }
+    position: absolute;
+    background-color: #1c2431;
+    top: 2845px;
+    left: 390px;
+    box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+    border-radius: 4.93px; }
+  section.early-access p {
+    width: 90%; }
+section .footer-bottom {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 310px;
+  color: white; }
+section.contact {
+  display: flex;
+  flex-direction: column;
+  width: 225px; }
+section.social {
+  color: white; }
 
 .one, .two, .three, .four {
   width: 349px; }
@@ -252,16 +270,19 @@ section.early-access {
 
 div.click {
   background-image: linear-gradient(111deg, #65e2d9, #339ecc);
-  width: 280px;
+  width: 200px;
   height: 56px;
   border-radius: 28px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0 auto; }
+  justify-content: center; }
   div.click label.click {
     width: 200px;
     text-align: center; }
+div.phone, div.email {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
 
 .testimonials {
   display: flex;
@@ -279,7 +300,7 @@ div.click {
     height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 1;
     box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
@@ -296,10 +317,26 @@ div.click {
 
 .profile {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%; }
   .profile .name-title {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 258px; }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 75%; }
+  .footer-bottom section.lorem {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start; }
+    .footer-bottom section.lorem figure.location {
+      margin: 21px; }
+  .footer-bottom .Contact {
+    width: 225px; }
 
 input, select {
   vertical-align: middle;
