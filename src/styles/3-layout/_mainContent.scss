@@ -1,4 +1,4 @@
-div.main {
+[[    div.main {
   background-color: $bckg-main;
   width: 100%;
   height: 100%;
@@ -196,55 +196,335 @@ div {
       margin: 21px;
     }
   }
-    .social {
-      display: flex;
-      justify-content: space-evenly;
-      width: 81px;
+  .social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 81px;
+  }
+  .links {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    li {
+      list-style: none;
+      padding: 0px 25px 5px;
     }
-    .links {
-      width: 230px;
-      display: flex;
-      flex-direction: column;
-      li {
-        list-style: none;
-        padding: 0px 25px 5px;
-      }
+  }
+  .contact {
+    width: 171px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 140px;
+}
+
+input, select {
+  vertical-align: middle;
+  width: 440px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+figure {
+  &.author-pic img {
+    width: 24px;
+    height: auto;
+    border-radius: 24px;
+  }
+  img.quotations {
+  }
+
+}
+
+a.footer-logo {
+  margin-left: 100px;
+
+}
+
+
+
+
+
+
+
+//RESPONSIVE
+
+
+@media only screen and (min-width: 375px) {
+
+  ul.links {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+  }
+
+  body {
+    width: 375px;
+  }
+  section.container {
+    margin: 0 45px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 24px;
+    margin: 35px 5px;
+  }
+
+  img.logo {
+    width: 80px;
+  }
+
+  section .about {
+    width: 375px;
+  }
+
+  .one, .two, .three, .four {
+    width: 325px;
+  }
+
+  .about figure img {
+    width: 304px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .about h1 {
+    font-size: 24px;
+    margin-top: 36px;
+    width: 300px;
+    margin: 0 auto;
+
+    .about p {
+      font-size: 14px;
+      margin: 32px 64px;
     }
-    .contact {
-      width: 171px;
-      height: 64px;
+
+    div.click {
+      background-image: linear-gradient(111deg, #65e2d9, #339ecc);
+      width: 280px;
+      height: 48px;
+      border-radius: 28px;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 auto;
+      align-items: center;
     }
+
+    .about p.click {
+      font-family: 'raleway', serif;
+      font-weight: bold;
+      color: white;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+  }
+
+  section.products {
+    width: 375px;
+    height:auto;1036px;
+  }
+
+  .stay-productive h1 {
+    font-size: 18px;
+  }
+
+  .stay-productive p, .stay-productive li, .footer-bottom p, .footer-bottom li {
+    font-size: 14px;
+  }
+
+  section .stay-productive figure img {
+    width: 304px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+
+  p.quote {
+    font-size: 10px;
+  }
+  .testimonials .one, .testimonials .two, .testimonials .three, .testimonials .four {
+    background: #202a3c;
+    width: 280px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+    border-radius: 3.93px;
+  }
+
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    flex-direction: column;
+  }
+
+  .testimonials figure.behind {
+    position: absolute;
+    top: 2604px;
+    left: 35px;
+  }
+
+  .group {
+    display: flex;
+    justify-content: space-between;
+    margin: 65px;
+    flex-direction: column;
+  }
+  .testimonials .one, .testimonials .two, .testimonials .three, .testimonials .four {
+    background: #202a3c;
+    width: 280px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+    border-radius: 3.93px;
+    justify-content: space-evenly;
+  }
+
+  .testimonials p {
+    letter-spacing: .5px;
+    width: 210px;
+
+  }
+
+  .profile {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .profile .name-title {
+    display: flex;
+    flex-direction: column;
+    width: 164px;
+  }
+  section.early-access {
+    background-color: #0b1523;
+    width: 100%;
+    height: 275px;
+    padding-top: 55px;
+    position: absolute;
+    top: 3199px;
+  }
+
+  .early-access h1 {
+    font-size: 18px;
+  }
+  input, select {
+    vertical-align: middle;
+    width: 280px;
+    height: 48px;
+    border-radius: 24px;
+    margin: 0 0 20px;
+  }
+
+  section.early-access .flex .email {
+    width: 300px;
+  }
+  section.early-access div.layer {
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c2431;
+    box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+    border-radius: 9px;
+    position: absolute;
+    top: -33px;
+    left: 38px;
+  }
+
+  section.early-access .flex {
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: flex;
+  }
+
+  .flex div.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section.early-access p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer {
+    background-color: #0b1523;
+    top: 3526px;
+    position: absolute;
+  }
+  .footer-top {
+    margin-bottom: 45px;
+    width: 375px;
+  }
+
+  .footer-bottom {
+    margin: 0;
+  }
+  .footer-bottom section.lorem {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .footer-bottom .contact {
+    width: 300px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 50px;
+  }
+
+  .footer-bottom .links {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 50px;
   }
 
   .links ul {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 140px;
+    flex-wrap: nowrap;
   }
 
-  input, select {
-    vertical-align: middle;
-    width: 440px;
-    height: 48px;
-    border-radius: 24px;
+  .footer-bottom .links li {
+    list-style: none;
+    padding: 15px 0 0;
   }
 
-  figure {
-    &.author-pic img {
-      width: 24px;
-      height: auto;
-      border-radius: 24px;
-    }
-    img.quotations {
-    }
-
-  }
-
-  a.footer-logo {
-    margin-left: 100px;
-
-  }
+}
