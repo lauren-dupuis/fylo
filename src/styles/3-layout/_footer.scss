@@ -9,7 +9,27 @@ footer {
   section {
     width: 380px;
   }
+  section.social {
+    width: 81px;
+  }
+  ul li {
+    list-style-type: none;
+    padding: 10px 0;
+  }
+  section.contact {
+    width: 190px;
+    margin: 0 30px;
 }
+section.lorem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+    width: 440px;
+}
+}
+
 
 @media only screen and (max-width: 375px) {
 
