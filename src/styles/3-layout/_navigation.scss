@@ -1,8 +1,30 @@
 ul.links li {
+  font-family: 'raleway', serif;
+  font-weight: bold;
+  color: white;
+  line-height: 1.5;
+  font-size: 16px;
+  padding: 0 23px;
+}
+ul.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 375px) {
+
+  ul.links {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+  }
+  ul.links li {
     font-family: 'raleway', serif;
     font-weight: bold;
     color: white;
     line-height: 1.5;
     font-size: 16px;
-    padding: 0 23px;
+    padding: 0px 16px;
+  }
 }

@@ -608,7 +608,7 @@ footer {
     justify-content: space-around;
     margin: 0 auto; }
 
-  .footer-bottom .contact {
+  .footer-bottom section.contact {
     width: 300px;
     height: 64px;
     display: flex;
@@ -679,16 +679,7 @@ header {
   header a.logo {
     height: 100%; }
 
-ul.links {
-  display: flex;
-  justify-content: space-between; }
-
 @media only screen and (max-width: 375px) {
-  ul.links {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 25px; }
-
   header {
     display: flex;
     justify-content: space-between;
@@ -701,7 +692,24 @@ ul.links {
     justify-content: space-between;
     width: 375px;
     height: 27px;
-    align-items: center; }
+    align-items: center; } }
+ul.links li {
+  font-family: 'raleway', serif;
+  font-weight: bold;
+  color: white;
+  line-height: 1.5;
+  font-size: 16px;
+  padding: 0 23px; }
+
+ul.links {
+  display: flex;
+  justify-content: space-between; }
+
+@media only screen and (max-width: 375px) {
+  ul.links {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px; }
 
   ul.links li {
     font-family: 'raleway', serif;
@@ -710,12 +718,5 @@ ul.links {
     line-height: 1.5;
     font-size: 16px;
     padding: 0px 16px; } }
-ul.links li {
-  font-family: 'raleway', serif;
-  font-weight: bold;
-  color: white;
-  line-height: 1.5;
-  font-size: 16px;
-  padding: 0 23px; }
 
 /*# sourceMappingURL=main.css.map */

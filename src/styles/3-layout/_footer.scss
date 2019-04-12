@@ -19,15 +19,15 @@ footer {
   section.contact {
     width: 190px;
     margin: 0 30px;
-}
-section.lorem {
+  }
+  section.lorem {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: baseline;
     justify-content: center;
     width: 440px;
-}
+  }
 }
 
 
@@ -63,7 +63,7 @@ section.lorem {
     margin: 0 auto;
   }
 
-  .footer-bottom .contact {
+  .footer-bottom section.contact {
     width: 300px;
     height: 64px;
     display: flex;
