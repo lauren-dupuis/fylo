@@ -564,6 +564,21 @@ footer {
   justify-content: space-around; }
   .footer-bottom section {
     width: 380px; }
+  .footer-bottom section.social {
+    width: 81px; }
+  .footer-bottom ul li {
+    list-style-type: none;
+    padding: 10px 0; }
+  .footer-bottom section.contact {
+    width: 190px;
+    margin: 0 30px; }
+  .footer-bottom section.lorem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+    width: 440px; }
 
 @media only screen and (max-width: 375px) {
   footer {
