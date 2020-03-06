@@ -252,22 +252,23 @@ figure {
     width: 100%;
   }
 
-  section.container {
+  section {
+    .container {
     width: 100%;
+    .about {
+      width: 100%;
+      margin: 0px;
+    }
   }
-
+}
   img.logo {
     width: 80px;
   }
 
-  section .about {
-    width: 100%;
-    margin: 0px;
-  }
 
   .one, .two, .three, .four {
-    width: 325px;
-    margin: 4%;
+    width: 85%;
+    margin: 4% 4% 10%;
   }
 
   .about figure img {
@@ -278,7 +279,7 @@ figure {
 
   div.click {
     background-image: linear-gradient(111deg, #65e2d9, #339ecc);
-    width: 27%;
+    width: 62%;
     height: 48px;
     border-radius: 28px;
     display: flex;
@@ -292,9 +293,10 @@ figure {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 0;
+    margin: 0 auto;
     flex-direction: column;
-    width: 300px;
+    width: 90%;
+    height: auto;
     .one, .two, .three, .four {
       width: 280px;
       height: 133px;
@@ -308,9 +310,7 @@ figure {
       justify-content: space-evenly;
     }
     figure.behind {
-      position: absolute;
-      top: 1930px;
-      left: 35px;
+      visibility: hidden;
     }
   }
 
@@ -363,7 +363,7 @@ figure {
         box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
         border-radius: 9px;
         position: absolute;
-        top: -70px;
+        top: auto;
         left: 38px;
       }
       .flex {
@@ -373,14 +373,14 @@ figure {
         justify-content: space-evenly;
         display: flex;
         .email {
-          width: 300px;
+          margin-top: 0;
         }
       }
     }
     &.products {
       width: 100%;
       height: auto;
-      margin: 15% 0;
+      margin: 38% 0;
     }
     .stay-productive {
       margin: 0 auto;
@@ -415,4 +415,10 @@ figure {
     width: 100%;
     margin: 0px;
   }
+  figure {
+    &.author-pic img {
+      width: 40px;
+      border-radius: 40px;
+    }
+
 }
