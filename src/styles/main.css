@@ -653,7 +653,7 @@ figure.author-pic img {
     padding: 5% 0;
   }
   section.early-access .flex {
-    width: 300px;
+    width: 85%;
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
@@ -902,7 +902,7 @@ header a.logo {
   height: 100%;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 450px) {
   header {
     display: flex;
     justify-content: space-between;
