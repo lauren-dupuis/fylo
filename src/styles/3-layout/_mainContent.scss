@@ -1,65 +1,93 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
 div.main {
   background-color: $bckg-main;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
 }
 
 section {
-  &.content {
-    background-image: url("build/images/bg-curvy-desktop.svg");
-    background-repeat: no-repeat;
-    background-position-y: 643px;
+  &.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &.content{
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .about {
-    width: 720px;
-    margin: 0 auto;
+    background-image: url(../../build/images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: contain;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .products {
-    width: 880px;
+    width: 72%;
     height: 508px;
-    margin: 158px auto 136px auto;
+    margin: 10% 0 3%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    align-items: baseline;
   }
   .stay-productive {
-    margin: 0 105px 143px;
+    width: 85%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 7%;
     div {
-      width: 563px;
+      width: 35%;
       display: flex;
       flex-direction: column;
+      margin-left: 10%;
     }
-    figure img {
-      width: 614.76px;
-      height: auto;
+    figure.productive {
+      margin: 5% 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
   &.early-access {
     background-color: $bckg-footer;
     width: 100%;
     height: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     div.layer {
-      width: 801px;
+      width: 60%;
       height: 280px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      margin: 0 auto;
+      margin: 5% auto;
       align-items: center;
       justify-content: center;
       position: absolute;
       background-color: hsl(217, 28%, 15%);
       top: 2845px;
-      left: 309px;
       box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
       border-radius: 9px;
     }
@@ -86,7 +114,6 @@ section {
   &.contact {
     display: flex;
     flex-direction: column;
-    width: 225px;
   }
   &.social {
     color: $font-white;
@@ -94,7 +121,7 @@ section {
 }
 
 .one, .two, .three, .four {
-  width: 349px;
+  width: 42%;
   figure img{
     display: flex;
     justify-content: center;
@@ -105,7 +132,7 @@ section {
 div {
   &.click {
     background-image: linear-gradient(111deg, $cyan, $blue);
-    width: 200px;
+    width: 27%;
     height: 56px;
     border-radius: 28px;
     display: flex;
@@ -114,7 +141,7 @@ div {
     margin: 0 auto;
     align-items: center;
     label.click {
-      width: 200px;
+      width: 100%;
       text-align: center;
     }
   }
@@ -123,20 +150,22 @@ div {
     flex-direction: row;
     align-items: center;
     figure {
-      margin-right: 20px;
+      margin: 0 20px 16px 0;
     }
   }
 }
+
 .testimonials {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1180px;
+  width: 100%;
   height: 247px;
-  margin: 0 auto 201px;
+  margin: 0 auto 16%;
   figure.behind {
     position: absolute;
-    top: 2517px;
+    top: 2466px;
+    margin-left: 9%;
   }
   .one, .two, .three, .four {
     background: $bckg-testimonials;
@@ -152,12 +181,11 @@ div {
   }
 }
 
-
 .group {
   display: flex;
   height: 100%;
-  justify-content: space-between;
-  width: 1160px;
+  justify-content: space-around;
+  width: 85%;
   margin: 0 auto;
   top: 2545px;
   align-items: flex-end;
@@ -175,10 +203,9 @@ div {
   }
 }
 
-
 input, select {
   vertical-align: middle;
-  width: 440px;
+  width: 65%;
   height: 48px;
   border-radius: 24px;
 }
@@ -191,50 +218,53 @@ figure {
   }
   img.quotations {
   }
-
 }
-
-a.footer-logo {
-  margin-left: 100px;
-
-}
-
-
-
-
-
-
 
 //RESPONSIVE
 
+@media only screen and (max-width: 1500px) {
+
+  .group {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .testimonials figure.behind {
+    visibility: hidden;
+  }
+
+  section.early-access div.layer{
+    top: 2860px;
+  }
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+}
 
 @media only screen and (max-width: 375px) {
 
-  ul.links {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 25px;
-  }
-
   body {
-    width: 375px;
-  }
-  section.container {
-    width: 375px;
+    width: 100%;
   }
 
+  section.container {
+    width: 100%;
+  }
 
   img.logo {
     width: 80px;
   }
 
   section .about {
-    width: 375px;
-    margin-top: 50px;
+    width: 100%;
+    margin: 0px;
   }
 
   .one, .two, .three, .four {
     width: 325px;
+    margin: 4%;
   }
 
   .about figure img {
@@ -243,21 +273,9 @@ a.footer-logo {
     margin: 0 auto;
   }
 
-  .about h1 {
-    font-size: 24px;
-    margin-top: 36px;
-    width: 300px;
-    margin: 0 auto;
-  }
-
-  .about p {
-    font-size: 14px;
-    margin: 32px 64px;
-  }
-
   div.click {
     background-image: linear-gradient(111deg, #65e2d9, #339ecc);
-    width: 280px;
+    width: 27%;
     height: 48px;
     border-radius: 28px;
     display: flex;
@@ -267,58 +285,6 @@ a.footer-logo {
     align-items: center;
   }
 
-  .about p.click {
-    font-family: 'raleway', serif;
-    font-weight: bold;
-    color: white;
-    line-height: 1.5;
-    font-size: 14px;
-  }
-
-
-  section.products {
-    width: 375px;
-    height:1036px;
-  }
-
-  section .stay-productive div {
-    width: 330px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .stay-productive h1 {
-    font-size: 18px;
-
-  }
-
-  .stay-productive p, .stay-productive li, .footer-bottom p, .footer-bottom li {
-    font-size: 14px;
-  }
-
-  section .stay-productive figure img {
-    width: 304px;
-    height: auto;
-    margin: 0 auto;
-  }
-
-
-  p.quote {
-    font-size: 10px;
-  }
-  .testimonials .one, .testimonials .two, .testimonials .three, .testimonials .four {
-    background: #202a3c;
-    width: 280px;
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 1;
-    box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
-    border-radius: 3.93px;
-  }
-
   .testimonials {
     display: flex;
     justify-content: space-between;
@@ -326,125 +292,125 @@ a.footer-logo {
     margin: 50px 0;
     flex-direction: column;
     width: 300px;
+    .one, .two, .three, .four {
+      width: 280px;
+      height: 133px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 36px;
+      align-items: center;
+      z-index: 1;
+      box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+      border-radius: 3.93px;
+      justify-content: space-evenly;
+    }
+    figure.behind {
+      position: absolute;
+      top: 1930px;
+      left: 35px;
+    }
   }
+}
 
-  .testimonials figure.behind {
-    position: absolute;
-    top: 1930px;
-    left: 35px;
-  }
 
-  .group {
-    display: flex;
-    justify-content: space-between;
-    margin: 65px auto;
-    width: 328px;
-    flex-direction: column;
-  }
-  .testimonials .one, .testimonials .two, .testimonials .three, .testimonials .four {
-    background: #202a3c;
-    width: 280px;
-    height: 133px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 36px;
-    align-items: center;
-    z-index: 1;
-    box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
-    border-radius: 3.93px;
-    justify-content: space-evenly;
-  }
+.group {
+  display: flex;
+  justify-content: space-between;
+  margin: 65px auto;
+  width: 328px;
+  flex-direction: column;
+}
 
-  .testimonials p {
-    letter-spacing: .5px;
-    width: 210px;
-
-  }
-
-  .profile {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    width: 90%;
-  }
-
-  .profile .name-title {
+.profile {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 90%;
+  .name-title {
     display: flex;
     flex-direction: column;
     width: 164px;
   }
-  section.early-access {
+}
+
+input, select {
+  vertical-align: middle;
+  width: 280px;
+  height: 48px;
+  border-radius: 24px;
+  margin: 0 0 20px;
+}
+
+section {
+  &.early-access {
     background-color: #0b1523;
     width: 100%;
     height: 275px;
     padding-top: 55px;
     position: absolute;
     top: 3199px;
+    div.layer {
+      width: 300px;
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      background-color: #1c2431;
+      box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+      border-radius: 9px;
+      position: absolute;
+      top: -70px;
+      left: 38px;
+    }
+    .flex {
+      width: 300px;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-evenly;
+      display: flex;
+      .email {
+        width: 300px;
+      }
+    }
   }
-
-  .early-access h1 {
-    font-size: 18px;
+  &.products {
+    width: 100%;
+    height: auto;
+    margin: 15% 0;
   }
-  input, select {
-    vertical-align: middle;
-    width: 280px;
-    height: 48px;
-    border-radius: 24px;
-    margin: 0 0 20px;
-  }
-  section.early-access .flex .email {
-    width: 300px;
-  }
-  section.early-access div.layer {
-    width: 300px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    background-color: #1c2431;
-    box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
-    border-radius: 9px;
-    position: absolute;
-    top: -70px;
-    left: 38px;
-  }
-
-  section.early-access .flex {
-    width: 300px;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    display: flex;
-  }
-
-  .flex div.email {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  section.early-access p {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  section .stay-productive {
+  .stay-productive {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    figure img {
+      width: 304px;
+      height: auto;
+      margin: 0 auto;
+    }
+    div {
+      width: 89%;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
   }
+}
 
-  div.main {
-    background-color: #181f2a;
-    height: 100%;
-    width: 375px;
-    left: 0px;
-    position: absolute;
-  }
+.flex div.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.main {
+  background-color: #181f2a;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
 }
