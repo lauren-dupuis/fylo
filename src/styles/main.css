@@ -357,7 +357,7 @@ section .stay-productive {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 7%;
+  margin-bottom: 3%;
 }
 section .stay-productive div {
   width: 35%;
@@ -386,12 +386,11 @@ section.early-access div.layer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 5% auto;
+  margin: -9% auto;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: sticky;
   background-color: #1c2431;
-  top: 2845px;
   box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
   border-radius: 9px;
 }
@@ -465,7 +464,7 @@ div.phone figure, div.email figure {
 }
 .testimonials figure.behind {
   position: absolute;
-  top: 2466px;
+  top: 2407px;
   margin-left: 9%;
 }
 .testimonials .one, .testimonials .two, .testimonials .three, .testimonials .four {
@@ -515,7 +514,7 @@ figure.author-pic img {
   height: auto;
   border-radius: 24px;
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1350px) {
   .group {
     justify-content: space-around;
     width: 100%;
@@ -526,7 +525,12 @@ figure.author-pic img {
   }
 
   section.early-access div.layer {
-    top: 2860px;
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 900) {
+  section.early-access .flex {
+    width: 90%;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -762,6 +766,20 @@ footer {
 
   .footer-bottom p {
     font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .footer-bottom, .footer-top {
+    margin: 0 3% 2%;
+  }
+
+  div.phone, div.email {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  div.phone figure, div.email figure {
+    margin: 0 16px 12px;
   }
 }
 @media only screen and (max-width: 375px) {
