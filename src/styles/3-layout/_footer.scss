@@ -81,12 +81,6 @@ div.phone , div.email {
   margin: 0 16px 12px;
   }
 }
-section {
-  &.lorem, &.contact, &.links, &.social {
-    width: 50%;
-    margin-bottom: 35px;
-  }
-}
 
 .svg-inline--fa {
   margin-left: 7%;
@@ -95,6 +89,12 @@ section {
 
 .footer-bottom {
   justify-content: space-between;
+  section {
+    &.lorem, &.contact, &.links, &.social {
+      width: 50%;
+      margin-bottom: 35px;
+    }
+  }
   .links ul {
     justify-content: flex-start;
     align-items: center;

@@ -787,11 +787,6 @@ footer {
     margin: 0 16px 12px;
   }
 
-  section.lorem, section.contact, section.links, section.social {
-    width: 50%;
-    margin-bottom: 35px;
-  }
-
   .svg-inline--fa {
     margin-left: 7%;
     height: 1.5em;
@@ -799,6 +794,10 @@ footer {
 
   .footer-bottom {
     justify-content: space-between;
+  }
+  .footer-bottom section.lorem, .footer-bottom section.contact, .footer-bottom section.links, .footer-bottom section.social {
+    width: 50%;
+    margin-bottom: 35px;
   }
   .footer-bottom .links ul {
     justify-content: flex-start;
