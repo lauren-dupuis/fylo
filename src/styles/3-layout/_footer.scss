@@ -71,16 +71,36 @@ footer {
 
 @media only screen and (max-width: 1350px) {
 .footer-bottom, .footer-top {
-  margin: 0 3% 2%;
+  margin: 0 7% 7%;
 }
 div.phone , div.email {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   figure {
   margin: 0 16px 12px;
   }
 }
+section {
+  &.lorem, &.contact, &.links, &.social {
+    width: 50%;
+    margin-bottom: 35px;
+  }
+}
+
+.svg-inline--fa {
+  margin-left: 7%;
+  height: 1.5em;
+}
+
+.footer-bottom {
+  justify-content: space-between;
+  .links ul {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
 }
 @media only screen and (max-width: 450px) {
   footer {
@@ -89,8 +109,8 @@ div.phone , div.email {
     position: unset;
   }
   .footer-top {
-    margin-bottom: 45px;
-    width: 100%;
+    margin: 0 auto 45px;
+    width: 85%;
   }
 
   a.footer-logo {
@@ -118,10 +138,10 @@ div.phone , div.email {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      margin: 50px 0 0;
+      margin: 35px 0 0;
     }
     .links {
-      margin: 50px auto 0;
+      margin: 35px auto 0;
     }
   }
   .links ul {
@@ -153,11 +173,11 @@ div.phone , div.email {
       }
     }
 
-    .social {
+    section.social {
       display: flex;
       justify-content: space-evenly;
-      width: 85%;
-      margin-top: 25px;
+      width: 25%;
+      margin-top: 35px;
     }
     .links {
       width: 69%;
@@ -165,7 +185,7 @@ div.phone , div.email {
       flex-direction: column;
       li {
         list-style: none;
-        padding: 10px 0px;
+        padding: 8px 0px;
       }
     }
     .contact {

@@ -94,8 +94,8 @@ section {
       width: 90%;
     }
     .flex {
-      width: 709px;
-      height: 192px;
+      width: 85%;
+      height: auto;
       flex-direction: column;
       justify-content: space-between;
       .email {
@@ -350,7 +350,7 @@ figure {
       padding-top: 55px;
       div.layer {
         width: 85%;
-        height: 320px;
+        height: auto;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
